@@ -13,10 +13,9 @@
     // else {
     // $result = "its zero";
     // }
-
     // echo "$result";
 
-    $num = -5;
-    ($num > 0)? $result = "positive" : $result = "down";
+    $num = 5;
+    ($num > 0)? $result = "positive" : $result = "none";
     echo "$result";
 ?>
