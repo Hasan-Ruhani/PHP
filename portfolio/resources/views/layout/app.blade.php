@@ -22,8 +22,6 @@
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
 
 		<!-- Plugins -->
@@ -31,7 +29,6 @@
 
         <!-- Core Style Css -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}" />
-
     </head>
 
     <body>
@@ -39,7 +36,7 @@
         <!-- =====================================
     	==== Start Loading -->
 
-    	<div class="loading">
+    	{{-- <div class="loading">
             <div class="gooey">
               <span class="dot"></span>
               <div class="dots">
@@ -48,7 +45,7 @@
                 <span></span>
               </div>
             </div>
-        </div>
+        </div> --}}
         
     	<!-- End Loading ====
     	======================================= -->
@@ -61,8 +58,7 @@
 
 
 
-
-
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
          <!-- jQuery -->
          <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
