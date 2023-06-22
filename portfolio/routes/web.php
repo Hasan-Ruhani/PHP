@@ -15,13 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
 });
-Route::get('/home', [portfolioController::class, 'getPortfolio']);
+
+Route::get('/home', [portfolioController::class, 'getPortfolio'])->name('home');
+
 Auth::routes();
 
+Route::get('/user', [portfolioController::class, 'getUser']);
+
 // Route::middleware('auth') -> group(function(){
-//     Route::get('/home', [portfolioController::class, 'getPortfolio']);
 // });
 
 
