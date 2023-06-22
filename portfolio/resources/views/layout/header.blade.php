@@ -5,7 +5,7 @@
 			<div class="container">
 
             <!-- Logo -->
-            <a class="logo" href="#">
+            <a class="logo" href="home">
                 <img src="img/logo-light.png" alt="logo">          
             </a> 
 
@@ -38,65 +38,27 @@
 			  </div>
 
 {{-- ........................................................................... --}}
-
-		{{-- <div class="dropdown">
-			@guest
-				@if(Rout::has('login'))
-					<div class="dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-							{{ Auth::user()->name }}
-						</a>
-
-						<ul class="dropdown-menu dropdown-menu-dark" >
-							<a href="{{ route('logout') }}"
-								onclick="event.preventDefault();
-									document.getElementById('logout-form').submit();">
-									{{ __('Logout') }}
-							</a>
-
-							<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-								@csrf
-							</form>
-						</ul>
-					</div>
-				@endif
-</div> --}}
-			{{-- @guest --}}
-				{{-- @if(!Route::has('login'))
-					<a href="{{ route('logout') }}"
-					onclick="event.preventDefault();
-									document.getElementById('logout-form').submit();">
-						{{ __('Sigh in') }}
-					</a>
-
-					<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-						@csrf
-					</form>
-					@endif
-					@endguest --}}
-					
-
 					@if(Route::has('login'))
 					@auth
 						<div class="dropdown">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
 								{{ Auth::user()->name }}
 							</a>
-							<ul class="dropdown-menu dropdown-menu-dark">
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
 									{{ __('Logout') }}
 								</a>
+								
 								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
 									@csrf
 								</form>
-							</ul>
+								<a href="user">profile</a>
+							</div>
 						</div>
 					@else
 						<a href="{{ route('login') }}">{{ __('Sign in') }}</a>
 					@endauth
 				@endif				
-				
-						
 				
 {{-- .................................................................... --}}
 
