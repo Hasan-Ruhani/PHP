@@ -9,4 +9,8 @@ class portfolioController extends Controller
     function getPortfolio(){
         return view('pages.home');
     }
+
+    function getUser(){
+        return view('pages.profile');
+    }
 }
