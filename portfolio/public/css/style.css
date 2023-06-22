@@ -1380,3 +1380,14 @@ footer p {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.dropdown-menu.show {
+  flex-direction: column !important;
+  background: #c49b66 !important;
+  display: flex !important;;
+  color: white !important;;
+}
+
+.dropdown-menu.show a {
+  padding-bottom: 10px !important;
+}
