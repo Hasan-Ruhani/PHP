@@ -148,7 +148,7 @@ body {
 .main-container .main-content .modal {
   border: 1px solid #1a233d;
   padding: 0 20px;
-  width: 50%;
+  width: 100%;
   border-radius: 25px;
   display: none;
 }
@@ -178,7 +178,7 @@ body {
 .main-container .right-sidebar .btn {
   border-top: 1px solid #1a233d;
   height: 50px;
-  line-height: 50px;
+  /* line-height: 50px; */
   width: 100%;
   text-align: center;
   cursor: pointer;
@@ -506,22 +506,14 @@ body {
 .direct-messaging .send-container .send-btn i::before {
   transform: rotate(-45deg);
 }
-
+/* //.............................................................................. */
 /* COUNTDOWN TIMER */
 .countdown-timer-large {
-  background: url("https://images.wallpapersden.com/image/wxl-desert-nights-moon-5k-minimalism_57965.jpg");
-  background-size: cover;
-  background-position: 50% 100%;
-  width: 400px;
-  height: 305px;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: left;
-  margin-bottom: 20px;
-  position: relative;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
+  border: 1px solid #1a233d;
+  padding: 0 20px;
+  width: 100%;
+  border-radius: 25px;
+  display: none;
 }
 .countdown-timer-large .info {
   width: 100%;
