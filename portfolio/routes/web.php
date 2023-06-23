@@ -23,6 +23,8 @@ Route::get('/home', [portfolioController::class, 'getPortfolio'])->name('home');
 Auth::routes();
 
 Route::get('/user', [portfolioController::class, 'getUser']);
+Route::post('/blog', [portfolioController::class, 'getBlog']);
+Route::get('/blogPage', [portfolioController::class, 'getBlogPage']);
 
 // Route::middleware('auth') -> group(function(){
 // });
