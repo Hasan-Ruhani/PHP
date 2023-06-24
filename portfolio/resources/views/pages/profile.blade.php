@@ -16,7 +16,7 @@
   
   <script>
     tinymce.init({
-      selector: 'textarea#editor',
+      selector: 'textarea#editor',     //  script for editor box
     });
   </script>
   
@@ -68,7 +68,7 @@
 
     </div>
     <div class="modal timer-display">
-      <textarea id="editor"></textarea>
+      <textarea id="editor"></textarea>    {{-- editor box --}}
     </div>
     
     <div class="direct-messaging minimize">
