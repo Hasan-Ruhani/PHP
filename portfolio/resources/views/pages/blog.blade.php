@@ -16,8 +16,8 @@
         <div class="col-md-6">
           @foreach ($showData as $data)
 
-            <h1>{{ $data -> head_line }}</h1>
-            <p> {{ $data -> discription }}</p>
+            <h1>{{ $data -> head_line }}</h1>      {{-- add head line in xampp server --}}
+            <p> {{ $data -> discription }}</p>     {{-- add description in xampp server --}}
         
           @endforeach
           </div>
